@@ -11,8 +11,13 @@ const users = require("./routes/users");
 
 const jwt = require("jsonwebtoken");
 
+const cors = require("cors");
+
 //Middlewares
+
 app.use(express.json());
+
+app.use(cors());
 
 //Routes
 
